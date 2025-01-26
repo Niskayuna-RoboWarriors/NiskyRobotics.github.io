@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niskayuna RoboWarriors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4c3b62ea69.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+      <a href="#" class="logo" style="width: 7%;">
+        <img src="imgs/newlogo.png" width="100%" height="100%" onclick="scrollToSection(event, 'hero')">
+      </a>
+
+      <ul class="navbar">
+        <li><a href="#links" onclick="scrollToSection(event, 'linkspage')">Links</a></li>
+        <li><a href="#" onclick="scrollToSection(event, 'rbtgallery')">Our Robot</a></li>
+        <li><a href="#" onclick="scrollToSection(event, 'aboutPage')">About</a></li>
+      </ul>
+
+      <div class="right-content">
+        <a href="https://github.com/Niskayuna-RoboWarriors" target="_blank" class="nav-btn"><i class="fa-brands fa-github"></i> Github</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h5 data-aos="fade-right" data-aos-duration="1400">Niskayuna RoboWarriors</h5>
+        <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">6460</h1>
+        <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">Semper Inspirans!</p>
+
+        <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">
+          <a href="#" class="btn" onclick="scrollToSection(event, 'rbtgallery')">Learn More</a>
+          <a href="#" class="subHmainHero">
+            The Ultimate Robot Warrior!
+          </a>
+        </div>
+      </div>
+
+
+      <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
+        <img src="imgs/robotTranspBG.png">
+      </div>
+
+      <div class="icons">
+        <div class="icCntr"></div>
+          <a href="https://github.com/Niskayuna-RoboWarriors" target="_blank" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600"><i class="ri-github-fill"></i></a>
+          <a href="https://docs.google.com/document/d/1epuSGxWWO9kOqzCsKmciTP67kNQC0j3u-gJFF_Ras-M/edit?usp=sharing" target="_blank" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="700"><i class="ri-article-line"></i></a>
+          <a href="https://www.firstinspires.org/resource-library/ftc/game-and-season-info" target="_blank" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800"><i class="ri-robot-2-line"></i></a>
+  
+      </div>
+
+      <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
+        <a href="#"><i class="ri-scroll-to-bottom-line"></i>Scroll Down</a>
+      </div>
+    </section>
+
+    <section class="linkspage" id="linkspage">
+      <div class="linkDiv" data-tilt>
+        <a href="https://github.com/Niskayuna-RoboWarriors/ftc-2024-25" target="_blank"><div class="linkC">
+          <i class="ri-github-fill"></i>
+          <h1>Github</h1>
+          <p>All of our code.</p>
+        </div></a>
+        <div class="vertical-divider"></div>
+        <a href="https://docs.google.com/document/d/1epuSGxWWO9kOqzCsKmciTP67kNQC0j3u-gJFF_Ras-M/edit?usp=sharing" target="_blank"><div class="linkC">
+          <i class="ri-article-line"></i>
+          <h1>Notebook</h1>
+          <p>notes? add smth</p>
+        </div></a>
+        <div class="vertical-divider"></div>
+        <a href="https://www.firstinspires.org/resource-library/ftc/game-and-season-info" target="_blank"><div class="linkC">
+          <i class="ri-robot-2-line"></i>
+          <h1>FTC 2025</h1>
+          <p>add smth here</p>
+        </div></a>
+
+      </div>
+
+    </section>
+
+
+    <section style="background-color: rgb(30, 83, 130);" class="rbtgallery" id="rbtgallery">
+      <div id="carousel-wrapper" data-tilt="">
+        <div id="menu">
+            <div id="current-option">
+              <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+              <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+            </div>
+            <button id="previous-option"></button>
+            <button id="next-option"></button>
+        </div>
+        <div id="image"></div>
+      </div>
+    </section>
+
+    <section class="aboutPage" id="aboutPage" >
+      <div class="aboutDiv" id="aboutDiv" data-tilt="" data-tilt data-tilt-max="5">
+        <h2>Team Structure:</h2>
+        <img src="imgs/teamOrganizer.jpg" height="50%" width="50%" style="border-radius: 20px;">
+        <h4>Our team is divided into 3 subteams: Mechanical, Notebook, and Programming. These subteams are responsible for making the mechanical components of the robot, documenting and writing our activities in the notebook, and writing code for the robot respectively.</h4>
+        <p></p>
+        <h2>Chassis</h2>
+        <h4>To improve this year's robot, we retained the successful U-shaped frame from last season, as it provided ample space for intake and required minimal reconstruction, allowing us to focus on competition-specific components like linear slides and a custom claw. After addressing issues such as motor roughness and removing a chassis beam to optimize slide extension, the team ensured the robot's reliability and functionality for the new FTC challenges.</h4>
+        <p></p>
+        <h2>Intake System</h2>
+        <h4>We use a rack-and-pinion claw mounted on an arm that reliably picks up and deposits one game piece at a time into the highest bucket. The 3D-printed design, combined with servos and a few additional components, ensures lightweight functionality and maintains stability by preventing significant shifts in the center of gravity when the slides are raised or lowered.</h4>
+        <p></p>
+        <h2>Linear Slides</h2>
+        <h4>This year, we upgraded to GoBilda Viper Slides for our intake assembly after determining they were a better option than reusing last year's bulky slides. By analyzing the game manual and calculating optimal heights for each basket and the pull-up bars, we programmed precise settings for the slides, ensuring smooth, efficient movement and maximum range of motion for the claw.</h4>
+        <p></p>
+        <h2>Programming</h2>
+        <h4>To organize and write code as a team, we used Github and Intellij IDEA as our tools.</h4>
+        <p></p>
+        <h2>Finite State Machine</h2>
+        <h4>We programmed our robot in Java using the FTC SDK within IntelliJ IDEA Community, with two primary OpModes for autonomous and teleoperation. By implementing a finite state machine and feedback control in each subsystem's update method, we ensured precise, simultaneous control of multiple subsystems while maintaining ease of testing through subsystem decoupling.</h4>
+      </div>
+
+    </section>
+    
+
+   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script/vanilla-tilt.js"></script>
+    <script>
+      AOS.init({
+        offset:1,
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
